@@ -1,0 +1,61 @@
+@import '../../index.scss';
+
+.city-card{
+    position: relative;
+    background: $color-light;
+    margin: 2% 15%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    text-align: start;
+    overflow: hidden;
+    .img-container{
+        overflow: hidden;
+        width: auto;
+        height:100%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .city-details{
+        padding: 2rem;
+        &:hover .close{
+            opacity: 1;
+        }
+        .close{
+            background: $color-light-green;
+            border: none;
+            outline: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1rem;
+            color: $color-light;
+            opacity: 0;
+            transition: 1s;
+            &:hover{
+                background: $color-dark-green;
+            }
+        }
+        h1{
+            text-transform: uppercase;
+            color: $color-light-green;
+        }
+        h2{
+            text-transform: capitalize;
+            opacity: 0.8;
+        }
+
+        .show{
+            color: $color-light-green;
+            background: transparent;
+            border: 2px solid $color-light-green;
+            outline: none;
+        }
+
+        p{
+            opacity: 0.6;
+        }
+    }
+}

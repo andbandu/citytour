@@ -1,0 +1,16 @@
+
+$color-dark: #001021ff;
+$color-dark-green: #034748ff;
+$color-light: #ffffffff;
+$color-light-green: #248232ff;
+$color-gray: #cfd7c7ff;
+
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: $color-gray;
+}
